@@ -4,6 +4,10 @@ img {
   object-fit: cover;
 }
 
+.container {
+  overflow-x: hidden;
+}
+
 header {
   height: 7vh;
   border-bottom: 1px solid #eee;
