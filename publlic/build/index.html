@@ -19,7 +19,7 @@
 <body>
 <div class="container">
 
-  <header class="z-50 bg-white h-20 flex justify-between px-8 md:px-32 items-center w-screen shadow-xs">
+  <header class="z-50 relative bg-white h-20 flex justify-between px-8  md:pl-16 md:pr-32 items-center w-screen shadow-xs">
   
     <div class="logo cursor-pointer">
       <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20">
@@ -41,10 +41,10 @@
       </svg>
     </div>
   
-   <div class="div border border-red-500 absolute w-screen md:static">
-      <nav class=" z-20 relative w-full flex md:block">
+   <div class="div  md:static">
+      <nav class=" z-20  w-full   flex md:block">
         <ul
-          class="list-none bg-white md:bg-transparent rounded-md w-9/12 flex flex-col md:flex-row absolute md:static   px-6 py-8 left-0 mt-12 md:mt-0 items-center justify-center ">
+          class="list-none bg-white up z-50 md:bg-transparent rounded-md w-8/12  flex flex-col md:flex-row absolute left-0 md:static px-6 py-8  mt-12 md:mt-0 items-center justify-center ">
           <li class=" mb-3 md:px-4"><a
               class=" relative text-center block text-gray-700 md:text-gray-500 font-medium  py-1 transition-all duration-500  hover:text-black "
               href="#">Home</a></li>
@@ -64,7 +64,7 @@
       </nav>
    </div>
   
-    <div class="invite border border-red-300 hidden md:block">
+    <div class="invite  hidden md:block">
       <button class=" relative text-white bg-green-400 px-6 py-2 rounded-full">Request Invite</button>
     </div>
 
@@ -91,9 +91,9 @@
     </div>
     <div class="banner overflow-hidden z-10 relative md:static  order-1 md:col-span-1 ">
       <div class="phone z-0 absolute -mt-32 overflow-hidden md:mt-0  w-full  md:w-6/12 h-full ">
-        <img class="z-0" src="./images//image-mockups.png" alt="phones">
+        <img class="z-0 object-cover" src="./images//image-mockups.png" alt="phones">
       </div>
-      <svg class="h-full w-full" xmlns:xlink="http://www.w3.org/1999/xlink" width="1271" height="1034">
+      <svg class="h-full w-full object-cover" xmlns:xlink="http://www.w3.org/1999/xlink" width="1271" height="1034">
         <defs>
           <linearGradient id="c" x1="0%" x2="99.58%" y1="36.147%" y2="63.736%">
             <stop offset="0%" stop-color="#33D35E" />
