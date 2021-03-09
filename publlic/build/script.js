@@ -4,6 +4,7 @@ console.log("connected");
 const menuOpenClose = document.querySelector(".hamburger").children;
 
 const nav = document.querySelector("ul.up");
+const overlay = document.querySelector(".overlay");
 
 // function that handles everything on the responsive nav/menu
 const toggleNav = (event) => {
@@ -14,6 +15,7 @@ const toggleNav = (event) => {
   event.currentTarget[whichButtonClicked].classList.toggle("hidden");
 
   nav.classList.toggle("resp-nav-animation");
+  overlay.classList.toggle("hidden");
 };
 
 // binding to event click event listener
