@@ -113,7 +113,23 @@ li a:hover::before {
 
 @media screen and (max-width: 768px) {
   ul.up {
-    left: 4.5rem;
+    left: 4rem;
+    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.1);
+    transform: translateX(-150%);
+    transition: all 0.3s linear;
+  }
+
+  .resp-nav-animation {
+    animation: respAnimation 0.3s linear forwards;
+  }
+
+  @keyframes respAnimation {
+    70% {
+      transform: translateX(10%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
   }
 
   .overlay {
