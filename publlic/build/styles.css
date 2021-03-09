@@ -1,0 +1,112 @@
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header {
+  height: 7vh;
+  border-bottom: 1px solid #eee;
+}
+li a::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  right: 0;
+  height: 0.08rem;
+  bottom: -2px;
+  background-color: hsl(136, 65%, 51%);
+  transition: all 0.5s linear;
+}
+
+li a:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.home {
+  height: 86vh;
+}
+
+.whyChoose {
+  background: hsl(0, 0%, 95%);
+}
+.features > * {
+  padding: 0 0.5rem;
+  transition: all 0.5s ease-out;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.features > *::after {
+  position: absolute;
+  content: "";
+  height: 0.2rem;
+  background: hsl(136, 65%, 51%);
+  width: 0.4%;
+  bottom: -2px;
+  transition: all 0.5s linear;
+}
+
+.features > *:hover {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  transform: translateY(5px);
+}
+.features > *:hover::after {
+  width: 100%;
+}
+
+.icon svg {
+  transition: all 0.5s ease-out;
+}
+
+.features > *:hover .icon svg {
+  transform: scale(1.1);
+}
+
+.articles .img {
+  height: 40%;
+}
+.articles .txt {
+  height: 60%;
+}
+
+.art > * {
+  transition: all 0.5s ease-out;
+}
+
+.first,
+.second,
+.third,
+.fourth {
+  overflow: hidden;
+}
+
+.img img {
+  transition: all 0.5s ease-out;
+}
+.art > *:hover {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.art > *:hover img {
+  transform: scale(1.08);
+}
+
+.facebook svg path,
+.pinterest svg path,
+.instagram svg path,
+.youtube svg path,
+.twitter svg path {
+  transition: all 0.3s linear;
+}
+
+.facebook svg:hover path,
+.pinterest svg:hover path,
+.instagram svg:hover path,
+.youtube svg:hover path,
+.twitter svg:hover path {
+  fill: hsl(136, 65%, 51%);
+  transform: translateY(0.2rem);
+}
