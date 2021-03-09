@@ -115,4 +115,8 @@ li a:hover::before {
   ul.up {
     left: 4.5rem;
   }
+
+  .overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
 }
